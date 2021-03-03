@@ -1,0 +1,20 @@
+
+
+<ion-content>
+
+  
+  <app-navbar></app-navbar>
+  
+
+  <div class="container">
+    <h1 class="header">Minigames:</h1>
+    <div class="cards-container">
+      <div  class="card" *ngFor="let minigame of minigames; let i as index" (click)="loadGame(i)">
+        <img class="card-image" src="{{minigame.iconRef}}">
+        <p class="card-title">{{minigame.name}}</p>
+      </div>
+      
+    </div>
+  </div>
+
+</ion-content>

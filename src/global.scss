@@ -24,3 +24,18 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.login-modal .modal-wrapper {
+    height: 45%;
+    position: absolute;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .login-modal .modal-wrapper {
+        width: 90%;
+        height: 42%;
+    }
+}
