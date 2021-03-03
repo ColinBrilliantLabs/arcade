@@ -1,0 +1,17 @@
+
+<div class="container">
+  <div class="login-template">
+    <p class="header-text">{{headerText}}</p>
+    <ion-input [(ngModel)]="emailInput" placeholder="Email"></ion-input>
+    <ion-input type="password" *ngIf="state != 'forgotPassword'" [(ngModel)]="passwordInput" placeholder="Password"></ion-input>
+    <ion-input *ngIf="state == 'signUp'" [(ngModel)]="nicknameInput" placeholder="Nickname"></ion-input>
+
+
+    <a *ngIf="state != 'login'" (click)="changeState('login')" class="change-template-link" href="javascript:;">Already have an account? Click here to login!</a>
+    <a *ngIf="state != 'signUp'" (click)="changeState('signUp')" class="change-template-link" href="javascript:;">Don't have an account? Click here to sign up!</a>
+    <a *ngIf="state == 'login'" (click)="changeState('forgotPassword')" class="change-template-link" href="javascript:;">Forgot your password?</a>
+
+    <ion-button (click)="submit()" class="submit-button" color="primary">Submit</ion-button>
+
+  </div>
+</div>

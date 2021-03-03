@@ -1,0 +1,7 @@
+{
+  "name": "arcade-tutorial-bl",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

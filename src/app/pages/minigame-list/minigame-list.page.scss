@@ -1,0 +1,48 @@
+
+
+.container {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ion-content {
+    --background: url("/assets/background.png");
+}
+
+.header{
+    color: #9cdcf0;
+}
+
+.card {
+    width: 31%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 1%;
+}
+
+.card-image {
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 25px;
+    margin: 0;
+    margin-top: 6%;
+}
+

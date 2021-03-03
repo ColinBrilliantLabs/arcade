@@ -1,0 +1,15 @@
+
+
+.header-content-container {
+    display: flex;
+}
+
+.toolbar {
+    --background: #1e1e1e;
+    color: #9cdcf0;
+}
+
+ion-header {
+    position: sticky;
+    top: 0;
+}
